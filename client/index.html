@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>UnaBombeer</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+  <div id="app">
+    <header>
+      <h1>UnaBombeer</h1>
+      <nav id="menu"></nav>
+    </header>
+    <main>
+      <section id="screens">
+        <div id="menu-screen" class="screen">
+          <button id="btn-play-history">Play - Story</button>
+          <button id="btn-play-battle">Play - Battle</button>
+          <button id="btn-leaderboard">Leaderboard</button>
+        </div>
+        <div id="game-screen" class="screen hidden">
+          <canvas id="game-canvas" width="640" height="480"></canvas>
+          <div id="hud"></div>
+          <button id="btn-exit">Exit to Menu</button>
+        </div>
+        <div id="leaderboard-screen" class="screen hidden">
+          <h2>Leaderboard</h2>
+          <div id="leaderboard-list"></div>
+          <button id="btn-back">Back</button>
+        </div>
+      </section>
+    </main>
+    <footer>Built with ❤️</footer>
+  </div>
+  <script type="module" src="/js/main.js"></script>
+</body>
+</html>

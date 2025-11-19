@@ -1,0 +1,6 @@
+export async function api(path, method='GET', body=null) {
+  const opts = { method, headers: {} };
+  if (body) { opts.headers['Content-Type'] = 'application/json'; opts.body = JSON.stringify(body); }
+  const res = await fetch('/api' + path, opts);
+  return res.json();
+}

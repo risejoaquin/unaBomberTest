@@ -1,0 +1,7 @@
+{
+  "name": "unabombeer",
+  "private": true,
+  "workspaces": [
+    "server"
+  ]
+}
